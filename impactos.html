@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Descubra mais sobre Inteligência Artificial e como funciona">
+    <meta name="keywords" content="IA, AI, Inteligência Artificial, Inteligência, Artificial, Algoritmos">
+    <meta name="author" content="Mateus Santos, Nícolas Furtado, Murilo Oliveira e Ryhan Saunier">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>O que a Inteligência Artificial causa?</title>
+	<link rel="icon"  type="image/jpg"      href="img/icone.png"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+        <a class="nav-link font-weight-bold" href="index.html">
+            <img src="logoquarteto.png" alt="Logo" style="width: 150px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link font-weight-bold" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold" href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold" href="historia.html">História</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold" href="impactos.html">Impactos</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1>Impactos da Inteligência Artificial</h1>
+
+        <div id="carouselImpactos" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/mundo.jfif" class="d-block w-100" alt="Imagem Impactos 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/palma.jpg" class="d-block w-100" alt="Imagem Impactos 2">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselImpactos" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselImpactos" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+        <h2>Na Indústria</h2>
+        <p>A IA está revolucionando a indústria ao automatizar tarefas, otimizar processos e aumentar a eficiência. Robôs inteligentes e sistemas de monitoramento preditivo reduzem custos e melhoram a produtividade.</p>
+
+        <h2>Na Saúde</h2>
+        <p>A tecnologia de IA na saúde permite diagnósticos mais rápidos e precisos, análises de grandes volumes de dados médicos e até o desenvolvimento de novos medicamentos. A IA está salvando vidas ao identificar padrões que humanos podem não detectar.</p>
+
+        <h2>Na Educação</h2>
+        <p>Plataformas educacionais baseadas em IA oferecem aprendizado personalizado, adaptando-se às necessidades e ritmo de cada aluno. Assistentes virtuais ajudam professores e estudantes a maximizar o potencial de aprendizado.</p>
+
+        <h2>Na Economia</h2>
+        <p>Embora a IA esteja aumentando a produtividade e eficiência econômica, ela também está alterando o mercado de trabalho, automatizando certas funções e levantando questões sobre o futuro do emprego.</p>
+
+        <h2>Desafios Éticos</h2>
+        <p>Apesar dos benefícios, a IA traz desafios éticos, como a privacidade de dados, viés nos algoritmos e a responsabilidade das decisões autônomas. Esses dilemas precisam ser cuidadosamente debatidos para garantir um uso justo da tecnologia.</p>
+
+        <h2>Futuro da IA</h2>
+        <p>A IA está em constante evolução, e o futuro promete inovações ainda mais disruptivas. A colaboração entre humanos e máquinas será essencial para superar os desafios sociais e éticos enquanto continuamos a explorar o potencial dessa tecnologia.</p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; Mateus S., Nícolas F., Murilo e Ryhan. Todos os direitos reservados.</p>
+        <a href="#" class="scroll-top">Voltar ao topo</a>
+    </footer>
+
+    <button class="scroll-top" id="scrollTopBtn" onclick="scrollToTop()">⬆</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        window.onscroll = function() {
+            const button = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

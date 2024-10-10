@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Descubra mais sobre Inteligência Artificial e como funciona">
+    <meta name="keywords" content="IA, AI, Inteligência Artificial, Inteligência, Artificial, Algoritmos">
+    <meta name="author" content="Mateus Santos, Nícolas Furtado, Murilo Oliveira e Ryhan Saunier">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Fale Conosco</title>
+	<link rel="icon"  type="image/jpg"      href="img/icone.png"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+        <a class="nav-link font-weight-bold" href="index.html">
+            <img src="logoquarteto.png" alt="Logo" style="width: 150px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link font-weight-bold" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold" href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold" href="historia.html">História</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold" href="impactos.html">Impactos</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1>Entre em Contato Conosco</h1>
+        <p>Estamos aqui para ouvir você! Por favor, preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+
+        <form method="post" action="confirmacao.html">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu Nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Seu Email" required>
+            </div>
+            <h2><u>Deixe sua nota por favor!</u></h2></center>
+			<input type="radio" name="group" value="op1" onclick="uncheck0thers(this)">1
+			<input type="radio" name="group" value="op2" onclick="uncheck0thers(this)">2
+			<input type="radio" name="group" value="op3" onclick="uncheck0thers(this)">3
+			<input type="radio" name="group" value="op4" onclick="uncheck0thers(this)">4
+			<input type="radio" name="group" value="op5" onclick="uncheck0thers(this)">5
+			<input type="radio" name="group" value="op6" onclick="uncheck0thers(this)">6
+			<input type="radio" name="group" value="op7" onclick="uncheck0thers(this)">7
+			<input type="radio" name="group" value="op8" onclick="uncheck0thers(this)">8
+			<input type="radio" name="group" value="op9" onclick="uncheck0thers(this)">9
+			<input type="radio" name="group" value="op10" onclick="uncheck0thers(this)" checked>10<br><br>
+            <div class="form-group">
+                <label for="comentario">Mensagem:</label>
+                <textarea class="form-control" id="comentario" name="comentario" rows="5" placeholder="Escreva sua mensagem aqui..." ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-secondary">Limpar</button>
+        </form>
+    </div>
+    <br><br>
+
+    <footer class="footer">
+        <p>&copy; Mateus S., Nícolas F., Murilo e Ryhan. Todos os direitos reservados.</p>
+        <a href="#" class="scroll-top">Voltar ao topo</a>
+    </footer>
+
+    <button class="scroll-top" id="scrollTopBtn" onclick="scrollToTop()">⬆</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        window.onscroll = function() {
+            const button = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Descubra mais sobre Inteligência Artificial e como funciona">
+    <meta name="keywords" content="IA, AI, Inteligência Artificial, Inteligência, Artificial, Algoritmos">
+    <meta name="author" content="Mateus Santos, Nícolas Furtado, Murilo Oliveira e Ryhan Saunier">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Inteligência Artificial</title>
+	<link rel="icon"  type="image/jpg"      href="img/icone.png"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+        <a class="nav-link font-weight-bold" href="index.html">
+            <img src="logoquarteto.png" alt="Logo" style="width: 150px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link font-weight-bold" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold" href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold" href="historia.html">História</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold" href="impactos.html">Impactos</a></li>
+                <li class="nav-item"><a class="nav-link font-weight-bold" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <h1>Bem-vindo à Inteligência Artificial</h1>
+        <p>A Inteligência Artificial (IA) está revolucionando a forma como vivemos e trabalhamos. Desde assistentes pessoais até sistemas complexos de análise de dados, a IA está em toda parte.</p>
+        
+        <p>Explore nosso site para entender melhor como a IA funciona, sua história, os impactos na sociedade e como você pode se envolver com essa tecnologia transformadora.</p>
+        
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/cerebro.jpg" class="d-block w-100" alt="IA">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/tec.jpg" class="d-block w-100" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banana.jpg" class="d-block w-100" alt="Imagem 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+        <h2 class="mt-5">Desenvolvedores do Site</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="integrante1.jpg" class="card-img-top" alt="Integrante 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Desenvolvedor 1</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="integrante2.jpg" class="card-img-top" alt="Integrante 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Desenvolvedor 2</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="integrante3.jpg" class="card-img-top" alt="Integrante 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Desenvolvedor 3</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="integrante4.jpg" class="card-img-top" alt="Integrante 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Desenvolvedor 4</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p><img src="logoquarteto.png" alt="Logo" style="width: 150px;">&copy Todos os direitos reservados.</p>
+        <a href="#" class="scroll-top">Voltar ao topo</a>
+    </footer>
+
+    <button class="scroll-top" id="scrollTopBtn" onclick="scrollToTop()">⬆</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        window.onscroll = function() {
+            const button = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

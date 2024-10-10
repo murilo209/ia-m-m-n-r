@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Azul claro */
+    color: #333; /* Preto */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #003772; /* Azul mais escuro */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #0056b3; /* Azul mais escuro */
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.carousel-inner img {
+    height: 500px;
+}
+
+.card {
+    margin-top: 20px;
+    background-color: #fff; /* Branco */
+    border: 1px solid #ddd; /* Cinza claro */
+    height: 300px; /* Aumenta a altura do card */
+}
+
+.footer {
+    position: relative;
+    padding: 1rem 0;
+    background-color: #0056b3; /* Azul mais escuro */
+    color: white;
+    text-align: center;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none; /* Oculta o botão inicialmente */
+}
+
+.scroll-top:hover {
+    background-color: #004080; /* Azul escuro ao passar o mouse */
+}
+
+.navbar {
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+    background-color: #0056b3; /* Azul escuro */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+}
+
+.nav-link {
+    color: #ffffff; /* Branco */
+}
+
+.nav-link:hover {
+    color: #e6f7ff; /* Azul claro ao passar o mouse */
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilos para a linha do tempo horizontal */
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #0056b3;
+    border-radius: 10px;
+    background-color: #e6f7ff; /* Azul claro */
+}
+
+.timeline div {
+    text-align: center;
+    width: 18%;
+    position: relative;
+}
+
+.timeline div:not(:last-child)::after {
+    content: '';
+    width: 2px;
+    height: 40px;
+    background-color: #0056b3; /* Azul escuro */
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    padding: 0;
+    list-style: none;
+    border-top: 2px solid #007bff; /* Linha horizontal azul */
+}
+
+.timeline-item {
+    text-align: center;
+    position: relative;
+    width: 18%;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.timeline-item h3 {
+    font-size: 1.5rem;
+    color: #007bff; /* Azul */
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    color: #333; /* Texto padrão */
+    margin-top: 10px;
+}
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    padding: 0;
+    list-style: none;
+    border-top: 2px solid #007bff;
+}
+
+.timeline-item {
+    text-align: center;
+    position: relative;
+    width: 18%;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.timeline-item h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+}
+textarea{resize: none;
+}
